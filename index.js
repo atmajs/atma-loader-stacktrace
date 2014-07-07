@@ -26,8 +26,9 @@ module.exports = function(options){
 					console.error('Invalid SourceMap Json', path + '.map');
 					return null;
 				}
-				path = path.replace(/\\/g, '/');
-				map.sourceRoot = path.substring(0, path.lastIndexOf('/'));
+				// path should be already absolute, no `root` is required
+				//- path = path.replace(/\\/g, '/');
+				//- map.sourceRoot = path.substring(0, path.lastIndexOf('/'));
 				return {
 					map: map
 				}

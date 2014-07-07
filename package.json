@@ -1,6 +1,6 @@
 {
     "name": "atma-loader-stacktrace",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Stacktraces for compiled/minified scripts",
     "repository": {
         "type": "git",
